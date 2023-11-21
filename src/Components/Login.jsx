@@ -1,11 +1,11 @@
 import React from "react";
-import "./Login.css";
+import "./Styles.css";
 
 
 function Heading() {
   return (
-    <div>
-       <img src="./wt_logo.png" alt ="Logo"  height="200px" width="300px"/>
+    <div className="login-topmost">
+       <img src="./wt_logo.png" alt ="Logo" className=".image img:nth-of-type(2)" style={{ height: '225px', width: '525px' }}/>
       <div className="login-container"> 
         <h1>LOGIN</h1>
         <form method="post">

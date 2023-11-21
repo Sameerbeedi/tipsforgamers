@@ -1,0 +1,101 @@
+.login-topmost {
+    color: black;
+    background: black;
+    fill: white;
+    font-family: Inkika;
+    background-color: black;    
+}
+
+.login-container {
+    height: 500px;
+    width: 375px;
+    margin-left: 50px;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 100px;   
+}
+
+.signup-container {
+    height: 620px;
+    width: 375px;
+    margin: 0 auto;
+    margin-top: 5px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 100px;   
+}
+
+.image img:nth-of-type(2) {
+    position: absolute;
+    right: 0%;
+    bottom: 2%;
+}
+
+header {
+    text-align: left;
+    color: #fff;
+    position: absolute;
+    left: 30%;
+    top: 5%;
+    font-size: 100px;
+}
+
+h1 {
+    margin-top: 0;
+    text-align: center;
+    font-family: Inika;
+}
+
+label {
+    text-align: left;
+    font-size: larger;    
+}
+
+p {
+    text-align: center;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    font-size: larger;
+    font-family: Inika;
+    color: white;
+    width: 95%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: black;
+    border: none; /* Removing border for consistency */
+    border-radius: 0; /* Ensuring consistent border radius */
+}
+
+input[type="submit"] {
+    width: 50%;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.welcome-text {
+    position: absolute;
+    left: 28%;
+    top: -1%;
+}
+
+.welcome-text h2 {
+   font-size: 100px;
+   animation: rgbLit 5s infinite;
+}
+
+@keyframes rgbLit {
+    0% { color: rgb(255, 0, 0); } /* Red */
+    33% { color: rgb(0, 255, 0); } /* Green */
+    66% { color: rgb(0, 0, 255); } /* Blue */
+    100% { color: rgb(255, 0, 0); } /* Back to Red */
+}
+
