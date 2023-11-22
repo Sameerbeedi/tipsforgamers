@@ -1,6 +1,8 @@
-.login-topmost {
+html {
     color: black;
     background: black;
+}
+body{
     fill: white;
     font-family: Inkika;
     background-color: black;    
@@ -68,8 +70,8 @@ input[type="email"] {
     padding: 10px;
     margin: 10px 0;
     background-color: black;
-    border: none; /* Removing border for consistency */
-    border-radius: 0; /* Ensuring consistent border radius */
+    border: none; 
+    border-radius: 0; 
 }
 
 input[type="submit"] {
@@ -99,3 +101,61 @@ input[type="submit"] {
     100% { color: rgb(255, 0, 0); } /* Back to Red */
 }
 
+.image {
+    position: absolute;
+    right: 10%;
+    top :30%;
+    height: 500px;
+    width: 600px;
+  }
+
+.image1 {
+    position: absolute;
+    left: 1%;
+    top: 30%;
+
+}
+
+.image2 {
+    position: absolute;
+    left: 9%;
+    top: 55%;
+
+
+}
+.image3 {
+    position: absolute;
+    left: 1%;
+    top: 75%;
+
+}
+
+.image4 {
+    position: absolute;
+    right: 1%;
+    top: 30%;
+
+}
+
+.image5 {
+    position: absolute;
+    right: 9%;
+    top: 55%;
+
+}
+
+.image6 {
+    position: absolute;
+    right: 1%;
+    top: 75%;
+
+}
+
+.footerLabel {
+    position: absolute;
+    bottom: -15%;
+    right: 2%;
+    font-weight: bold;
+    font-size: 10px;
+    color: white;
+  }
