@@ -2,6 +2,8 @@ import React from "react";
 import "./Styles.css";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { Link} from "react-router-dom";
+
 
 function Heading() {
   let [name, setName] = useState("");
@@ -45,6 +47,8 @@ function Heading() {
         <h1>LOGIN</h1>
         <form method="post">
           <br />
+          <br />
+          <br />
           <label htmlFor="username">
             <b>Username</b>
           </label>
@@ -71,21 +75,12 @@ function Heading() {
             }}
           />
           <br />
-          <label htmlFor="forgot">
-            <b>Forgot Password?</b>
-          </label>
-          <br />
-          <br />
-          <br />
+          <br />  
           <p>
             <button type="submit" value="Submit" onClick={handleLogin} >Submit</button>
           </p>
           <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <p htmlFor="No account?"> Don't have an account? Register now! </p>
+         <p htmlFor="No account?"> Don't have an account? <Link to="/signup">Register now!</Link> </p>
         </form>
       </div>
       <div>

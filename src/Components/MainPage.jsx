@@ -1,5 +1,5 @@
-// Main.js
 import React from 'react';
+import{Link} from 'react-router-dom';
 
 const Main = () => {
   const styles = {
@@ -114,7 +114,7 @@ const Main = () => {
       left: '10%',
       width: '160px',
       height: '100px',
-      backgroundColor: '#7a7979',
+      backgroundColor: '#BC7676',
       margin: '10px',
     },
     rectangle2: {
@@ -123,7 +123,7 @@ const Main = () => {
       right: '10%',
       width: '160px',
       height: '100px',
-      backgroundColor: '#7a7979',
+      backgroundColor: '#BC7676',
       margin: '10px',
     },
     rectangle3: {
@@ -132,7 +132,7 @@ const Main = () => {
         right: '32%',
         width: '160px',
         height: '100px',
-        backgroundColor: '#7a7979',
+        backgroundColor: '#BC7676',
         margin: '10px',
       },
       rectangle4: {
@@ -141,7 +141,8 @@ const Main = () => {
         left: '32%',
         width: '160px',
         height: '100px',
-        backgroundColor: '#7a7979',
+        
+        backgroundColor: '#BC7676',
         margin: '10px',
       },
     headerOptions: {
@@ -169,7 +170,6 @@ const Main = () => {
     menuBarItem: {
       display: 'inline',
       marginRight: '10px',
-      fontWeight: 'bold'
     },
     menuBarItemLink: {
       textDecoration: 'none',
@@ -195,6 +195,7 @@ const Main = () => {
         <h1 style={styles.h1}>TFG : TIPS FOR GAMERS</h1>
         <h2 style={styles.h2}>Forging Professional Gamers</h2>
         <img src="wt_logo.png" className="Logo" alt="Logo" style={styles.logo} />
+
         <div className="header-options" style={styles.headerOptions}>
           <input type="text" placeholder="Search" className="search-bar" style={styles.searchBar} />
           <div style={{ position: 'absolute', left: '27%', top: '21.7%', display: 'flex', alignItems: 'center' }}>
@@ -212,16 +213,23 @@ const Main = () => {
 
         <div className="container" style={styles.container}>
           <div className="rectangle_1" style={styles.rectangle1}>
-          <h4 style={styles.footerSectionHeader}>Service 1</h4>
+          <h4 style={styles.footerSectionHeader}>
+            <Link to="/Rocketleague" style={{color :'black'}}>Rocketleague </Link></h4>
           </div>
           <div className="rectangle_2" style={styles.rectangle2}>
-          <h4 style={styles.footerSectionHeader}>Service 4</h4>
+          <h4 style={styles.footerSectionHeader}>
+          <Link to="/Mini" style={{color :'black'}}>Mini </Link></h4>
           </div>
           <div className="rectangle_3" style={styles.rectangle3}>
-          <h4 style={styles.footerSectionHeader}>Service 3</h4>
+          <h4 style={styles.footerSectionHeader}>
+          <Link to="/Chess" style={{color :'black'}}>Chess </Link></h4>
           </div>
           <div className="rectangle_4" style={styles.rectangle4}>
-          <h4 style={styles.footerSectionHeader}>Service 2</h4>
+          <h4 style={styles.footerSectionHeader}>
+          <Link to="/Clash" style={{color :'black'}}>Clash 
+          
+          </Link>
+          </h4>
           </div>
 
         </div>

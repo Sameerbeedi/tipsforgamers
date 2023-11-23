@@ -1,7 +1,7 @@
 import React from "react";
 import "./Styles.css";
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate ,Link} from "react-router-dom";
 
 function Signup() {
   let navigate = useNavigate();
@@ -75,14 +75,18 @@ function Signup() {
             type="email"
             name="email"
             placeholder="Enter your email"
-            required
             onChange={(e) => {setEmail(e.target.value);}}
+            required
           />
           <br />
           <br />
           <p>
           <button type="submit" value="Submit" onClick={handleSubmit} >Submit</button>
           </p>
+          <p>
+          
+        <p>Already have an account? <Link to="/Login">Login!</Link></p>
+      </p>
           <br />
           <br />
           <br />
